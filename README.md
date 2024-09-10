@@ -7,5 +7,5 @@ Neste trabalho foi distribuido alguns temas entre os alunos que deveriam criar u
 ### Atividade 4 - Site de noticias
 Criar um site de pesquisa com as ultimas informações, importante manter o html semântico para ajudar no SEO
 
-### Atividade Extra - Criar um blog com o seu hobye
+### Atividade Extra - Criar um blog com o seu hobby
 Como eu gosto muito de viajar não poderia ser outro tema :) 
