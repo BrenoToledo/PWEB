@@ -4,54 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies Musicais</title>
+    <title>Blog de Viagens</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>    
-        <img src="https://i.pinimg.com/originals/b5/4b/55/b54b55d73b120f03d81e218dadcee6df.jpg" alt="Imagem de fundo musical" class="header-image">
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <h1>Blog de Viagens</h1>
+            
+            <nav>
+              
+                <ul>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#dicas">Dicas de Viagem</a></li>
+                    <li><a href="#roteiros">Roteiros</a></li>
+                    <li><a href="#gastronomia">Gastronomia</a></li>
+                </ul>
+              
+            </nav>
+            <form class="search-bar">
+                <input type="text" placeholder="Pesquisar destinos...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
     </header>
 
     <main>
-        <section class="intro">
-            <h1>Meus Hobbies Musicais</h1>
-            <p>A música sempre foi uma paixão, e através de diferentes instrumentos, podemos explorar emoções e criatividade. Aqui estão alguns dos meus hobbies musicais favoritos.</p>
-        </section>
+        <div class="container">
+            <!-- Conteúdo Principal -->
+            <section class="content">
+                <article id="destinos">
+                    <h2>Destinos Imperdíveis no Brasil</h2>
+                    <section class="post">
+                        <img src="img/arraial-do-cabo.jpg" alt="Praias de Arraial do Cabo">
+                        <h3>Explorando as Maravilhas de Arraial do Cabo</h3>
+                        <p>Conhecida como o Caribe Brasileiro, Arraial do Cabo encanta com suas águas cristalinas e belas paisagens.</p>
+                    </section>
+                    <section class="post">
+                      <video width="100%" controls>
+                        <source src="video/arraial-do-cabo.mp4" type="video/mp4">
+                        Seu navegador não suporta a exibição de vídeos.
+                    </video>
+                        <h3>Fortaleza: Sol e Praia o Ano Todo</h3>
+                        <p>A capital do Ceará é um destino perfeito para quem busca sol, praia e uma vida noturna vibrante.</p>
+                    </section>
+                </article>
 
-        <section class="cards">
-            <article class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAO8IXTmW4Jzn7-I4IoqOGdQguBSDnszilyQ&s" alt="Violão" class="card-image">
-                <h2>Violão</h2>
-                <p>O violão é um dos instrumentos mais populares no mundo da música. Ele pode ser usado para diversos estilos musicais, desde clássicos até o pop moderno.</p>
-            </article>
-            <article class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8vZh3-7FoXfKF7q4Y9xc8XiuGl7ohegaP8w&s" alt="Guitarra" class="card-image">
-                <h2>Guitarra</h2>
-                <p>A guitarra elétrica revolucionou a música contemporânea, sendo usada no rock, blues, jazz, e muito mais. O som distorcido traz uma nova dimensão aos acordes.</p>
-            </article>
-            <article class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2h059MLixuFLAWTo8VyvdEV1jk_xgcJvbGg&s" alt="Baixo" class="card-image">
-                <h2>Baixo</h2>
-                <p>O baixo é o coração rítmico de uma banda, mantendo o groove e unindo as partes melódicas com as batidas da bateria.</p>
-            </article>
-        </section>
+                <article id="dicas">
+                    <h2>Dicas para Viajantes</h2>
+                    <section class="post">
+                        <img src="img/canoa-quebrada.jpg" alt="Praias de Canoa Quebrada">
+                        <h3>Canoa Quebrada: Aventura e Tranquilidade</h3>
+                        <p>Um destino ideal para quem busca tranquilidade durante o dia e diversão durante a noite.</p>
+                    </section>
+                    <section class="post">
+                        <img src="img/alagoas.jpg" alt="Praias de Alagoas">
+                        <h3>Alagoas: Paraíso das Piscinas Naturais</h3>
+                        <p>Com suas famosas piscinas naturais e praias deslumbrantes, Alagoas é um dos principais destinos do Brasil.</p>
+                    </section>
+                </article>
+            </section>
 
-        <section class="about-music">
-            <h2>O Impacto da Música</h2>
-            <p>A música é muito mais do que uma combinação de sons. Ela toca o emocional, cria memórias e une as pessoas em uma conexão única.</p>
-            <p>Desde as batidas do coração até o som de um violino, cada nota tem o poder de transformar ambientes e criar atmosferas que podem acalmar ou energizar.</p>
-        </section>
+            <!-- Barra Lateral com Posts Relacionados -->
+            <aside class="related-posts">
+                <h2>Destinos Relacionados</h2>
+                <ul>
+                    <li><a href="#arraial-do-cabo">Arraial do Cabo</a></li>
+                    <li><a href="#fortaleza">Fortaleza</a></li>
+                    <li><a href="#canoa-quebrada">Canoa Quebrada</a></li>
+                    <li><a href="#alagoas">Alagoas</a></li>
+                    <li><a href="#petar">Petar: Aventura nas Cavernas</a></li>
+                </ul>
+            </aside>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Breno Toledo. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Blog de Viagens by <strong>Breno Toledo</strong>. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
