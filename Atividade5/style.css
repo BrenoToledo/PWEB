@@ -1,0 +1,106 @@
+ /* ****************************************************************************                                                     */
+ /* * Desenvolvido por: Breno Toledo - ADS NOTURNO - RA: 0030482223047          */
+ /* * Data de desenvolvimento: 11/09/2024  - 21:15:15                           */
+ /* * Versão: 1.0.0                                                             */
+ /* * Descrição: Atividade 5 - Controle de media querie                         */
+ /* ****************************************************************************                                                     */
+
+.container {
+  font-size: 16px;
+  width: 500px;
+  height: 500px;
+  background-color: lightblue; /* Default color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2::before {
+  content: "Cor: Lightblue"; /* Texto padrão */
+  font-family: Arial, sans-serif;
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Tela até 420px */
+@media (max-width: 420px) {
+  .container {
+    background-color: darkblue;
+  }
+  h2::before {
+    content: "Cor: Azul Escuro";
+    color: white;
+  }
+}
+
+/* Tela até 768px */
+@media (min-width: 421px) and (max-width: 768px) {
+  .container {
+    background-color: orange;
+  }
+  h2::before {
+    content: "Cor: Laranja";
+    color: black;
+  }
+}
+
+/* Tela até 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    background-color: pink;
+  }
+  h2::before {
+    content: "Cor: Rosa";
+    color: black;
+  }
+}
+
+/* Tela até 1080px */
+@media (min-width: 1025px) and (max-width: 1080px) {
+  .container {
+    background-color: red;
+  }
+  h2::before {
+    content: "Cor: Vermelho";
+    color: white;
+  }
+}
+
+/* Tela até 1366px */
+@media (min-width: 1081px) and (max-width: 1366px) {
+  .container {
+    background-color: purple;
+  }
+  h2::before {
+    content: "Cor: Roxo";
+    color: white;
+  }
+}
+
+/* Tela até 1920px */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .container {
+    background-color: yellow;
+  }
+  h2::before {
+    content: "Cor: Amarelo";
+    color: black;
+  }
+}
+
+/* Tela maior que 1920px */
+@media (min-width: 1921px) {
+  .container {
+    background-color: green;
+  }
+  h2::before {
+    content: "Cor: Verde";
+    color: white;
+  }
+}
