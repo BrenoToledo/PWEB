@@ -1,0 +1,88 @@
+/* Estiliza o corpo da página */
+body {
+  /* Define a fonte e tamanho da fonte */
+  font-family: Arial, sans-serif;
+  /* Define a altura e largura da página */
+  height: 100vh;
+  /* Define o background da página */
+  background-color: #f0f8ff;
+  /* Centraliza o conteúdo vertical e horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estiliza o título da página */
+h1 {
+  /* Adiciona um espaço entre o título e o conteúdo */
+  margin-bottom: 20px;
+}
+
+/* Estiliza a área do jogo */
+.game-area {
+  /* Centraliza o conteúdo horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estiliza os botões de escolha */
+.choice-button {
+  /* Adiciona um espaço entre os botões */
+  margin: 10px;
+  /* Define o padding e tamanho da fonte dos botões */
+  padding: 20px;
+  font-size: 24px;
+  /* Define o cursor do mouse quando passa sobre o botão */
+  cursor: pointer;
+  /* Define a borda dos botões */
+  border: 2px solid #000;
+  /* Define o raio da borda dos botões */
+  border-radius: 5px;
+  /* Define a transição de background-color quando o mouse passa sobre o botão */
+  transition: background-color 0.3s;
+}
+
+/* Estiliza o efeito de hover nos botões */
+.choice-button:hover {
+  /* Muda o background-color quando o mouse passa sobre o botão */
+  background-color: #87cefa;
+}
+
+/* Estiliza a área de escolha do computador */
+#computer-choice {
+  /* Define a largura e altura da área */
+  width: 100px;
+  height: 100px;
+  /* Centraliza o conteúdo horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Define a borda da área */
+  border: 2px solid #000;
+  /* Define o raio da borda da área */
+  border-radius: 50%;
+  /* Define o tamanho da fonte da área */
+  font-size: 36px;
+  /* Adiciona um espaço entre a área e o conteúdo */
+  margin: 20px;
+}
+
+/* Estiliza o efeito de loading */
+.loading {
+  /* Define a animação de rotação */
+  animation: spin 1s linear infinite;
+}
+
+/* Define a animação de rotação */
+@keyframes spin {
+  /* Inicia a rotação em 0 graus */
+  0% {
+    transform: rotate(0deg);
+  }
+  /* Termina a rotação em 360 graus */
+  100% {
+    transform: rotate(360deg);
+  }
+}

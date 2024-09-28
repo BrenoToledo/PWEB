@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura - Jogo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jogo: Pedra, Papel e Tesoura</h1>
+    <div class="game-area">
+        <button class="choice-button" onclick="play('rock')" title="Pressione R para Pedra">
+            🪨 Pedra
+        </button>
+        <button class="choice-button" onclick="play('paper')" title="Pressione P para Papel">
+            📄 Papel
+        </button>
+        <button class="choice-button" onclick="play('scissors')" title="Pressione S para Tesoura">
+            ✂️ Tesoura
+        </button>
+    </div>
+    <div id="computer-choice">?</div>
+    <h2 id="result">Faça sua escolha!</h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
