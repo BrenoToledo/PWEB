@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações sobre o Filme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pesquisa de satisfação</h1>
+        <form>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade"><br><br>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select><br><br>
+            <label for="opniao">Opnião:</label>
+            <select id="opniao" name="opniao">
+                <option value="4">Ótimo</option>
+                <option value="3">Bom</option>
+                <option value="2">Regular</option>
+                <option value="1">Péssimo</option>
+            </select><br><br>
+            <button id="btn" type="button">Enviar</button>
+        </form>
+<!-- ... -->
+
+<div class="results">
+  <p id="media-idade"></p>
+  <p id="mais-velha"></p>
+  <p id="mais-nova"></p>
+  <p id="pessimo-count"></p>
+  <p id="otimo-percentage"></p>
+  <p id="bom-count"></p>
+  <p id="homens-count"></p>
+  <p id="mulheres-count"></p>
+  <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+      <span id="respondents-count"></span>
+  </div>
+</div>
+                <div class="progress" id="progress"></div>
+                <span id="respondents-count"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
