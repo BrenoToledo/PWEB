@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão da Velocidade da Luz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversão da Velocidade da Luz</h1>
+        <form>
+            <label for="velocidade">Velocidade da Luz (m/s):</label>
+            <input type="number" id="velocidade" name="velocidade" value="299792458" disabled><br><br>
+
+            <button id="btn" type="button" onclick="converter()">Converter para cm/ns</button>
+        </form>
+
+        <div class="results">
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script>
+        function converter() {
+            const velocidadeLuz = 299792458; // metros por segundo
+            const metrosParaCm = 100; // 1 metro = 100 cm
+            const segundosParaNs = 1e9; // 1 nanossegundo = 1e-9 segundos
+
+            // Converte velocidade da luz para cm/ns
+            const velocidadeCmNs = (velocidadeLuz * metrosParaCm) / segundosParaNs;
+
+            // Exibe o resultado
+            document.getElementById('resultado').innerText = `A velocidade da luz é ${velocidadeCmNs} cm/ns.`;
+        }
+    </script>
+</body>
+</html>
