@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transformação de Texto</title>
+    <style>
+      /* Estilos básicos para organização */
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      .container {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      input[type="text"] {
+        padding: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Transformar Texto</h2>
+
+      <!-- Campo de texto para entrada do usuário -->
+      <input type="text" id="text-input" placeholder="Digite algo aqui" />
+
+      <!-- RadioButtons para transformar o texto -->
+      <div>
+        <input type="radio" id="uppercase" name="transform" value="19" />
+        <label for="uppercase">Maiúsculas</label>
+
+        <input type="radio" id="lowercase" name="transform" value="22" />
+        <label for="lowercase">Minúsculas</label>
+      </div>
+
+      <!-- Botão para aplicar a transformação -->
+      <button onclick="transformText()">Transformar</button>
+    </div>
+
+    <script>
+      function transformText() {
+        // Seleciona o campo de texto e o conteúdo dele
+        const textInput = document.getElementById("text-input");
+        const textValue = textInput.value;
+
+        // Verifica qual RadioButton está selecionado
+        if (document.getElementById("uppercase").checked) {
+          // Transforma o texto em letras maiúsculas
+          textInput.value = textValue.toUpperCase();
+        } else if (document.getElementById("lowercase").checked) {
+          // Transforma o texto em letras minúsculas
+          textInput.value = textValue.toLowerCase();
+        } else {
+          alert("Selecione uma opção para transformar o texto.");
+        }
+      }
+    </script>
+  </body>
+</html>
